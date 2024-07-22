@@ -1,0 +1,59 @@
+{% extends 'layouts/layout_3.html' %}
+
+{% block content %}
+
+<!-- Content Start -->
+<div class="container-fluid">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand bg-dark navbar-dark sticky-top px-4 py-0 ">
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <img class="rounded-circle me-lg-2" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                    <span class="d-none d-lg-inline-flex text-light">{{user}}</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end bg-dark border-0 rounded-0 rounded-bottom m-0 ">
+                    <a href="/principal" class="dropdown-item text-light">Regresar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+{% for turnos in turnos %}
+    <!-- Table Start -->
+    <div class="container-fluid pt-4 px-4">
+        <a href="{% url 'detalle_turno' turnos.id %}">
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="bg-dark rounded h-100 p-4">
+                        <h6 class="mb-4 text-light">TURNO</h6>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Turno</th>
+                                        <th scope="col">Descripción</th>
+                                        <th scope="col">Usuario</th>
+                                        <th scope="col">Fecha asistencia</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{turnos.title}}</td>
+                                        <td>{{turnos.descripcion}}</td>
+                                        <td>{{turnos.user.username}}</td>
+                                        <td>{{turnos.fecha_completada|date:'M j y:i'}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- Table End -->
+
+{% endfor %}
+
+{% endblock %}

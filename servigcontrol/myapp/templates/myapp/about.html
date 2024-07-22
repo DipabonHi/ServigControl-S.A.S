@@ -1,0 +1,47 @@
+{% extends 'layouts/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- About Start -->
+<div class="container-fluid about py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="h-100" style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
+                    <img src="{% static 'img/logo-Servigcontrol.jpg' %}" class="img-fluid w-100 h-100" alt="">
+                </div>
+            </div>
+            <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                <h5 class="section-about-title pe-3">Sobre nosotros</h5>
+                <h1 class="mb-4">Bienvenidos a  <span class="text-primary">Servigcontrol S.A.S</span></h1>
+                <p class="mb-4">En Servigcontrol S.A.S., nuestra historia es una prueba de dedicación, crecimiento y compromiso con la excelencia. Desde nuestros humildes comienzos, hemos trabajado incansablemente para establecer estándares de seguridad excepcionales. Creemos en la importancia de la innovación constante y en la formación continua de nuestro equipo para adaptarnos a las demandas cambiantes del mercado. Nuestro propósito es ofrecer un servicio de vigilancia que no solo cumpla, sino que supere las expectativas de nuestros clientes, garantizando siempre su tranquilidad y protección.</p>
+                <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Nuestra misión es ofrecer servicios de seguridad de alta calidad, garantizando la tranquilidad y protección de nuestros clientes a través de la excelencia operativa y el compromiso con la mejora continua.
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Ser reconocidos como líderes en el sector de seguridad privada, destacándonos por nuestra innovación, confiabilidad y dedicación a la satisfacción del cliente.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Integridad: Actuamos con honestidad y transparencia en todas nuestras acciones.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Compromiso: Nos dedicamos a la protección y seguridad de nuestros clientes.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Innovación: Implementamos tecnologías avanzadas para mejorar nuestros servicios.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Profesionalismo: Contamos con un equipo altamente capacitado y profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'layouts/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Carousel Start -->
+<div class="carousel-header">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="{% static 'img/imagen1.jpg' %}" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Tecnología y Seguridad a su Servicio</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Bienvenidos a Servigcontrol S.A.S.!</h1>
+                        <p class="mb-5 fs-5">¡Bienvenidos a Servigcontrol S.A.S.! Nos enorgullece ofrecer soluciones integrales de seguridad que garantizan la protección y tranquilidad de nuestros clientes. Con más de 10 años de experiencia en el sector, nos comprometemos a brindar servicios de vigilancia personalizados y efectivos. Explore nuestro sitio para conocer más sobre cómo podemos ayudar a proteger lo que más importa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/imagen2.jpg' %}" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Innovación en Seguridad</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Innovación y Excelencia</h1>
+                        <p class="mb-5 fs-5">En Servigcontrol S.A.S., entendemos que la seguridad es fundamental para el bienestar y éxito de nuestros clientes. Nos enorgullece contar con un equipo altamente capacitado y comprometido, respaldado por certificaciones reconocidas en el sector de la seguridad privada. Cada miembro de nuestro equipo comparte la misión de proporcionar un servicio de vigilancia excepcional, basado en principios de integridad, profesionalismo y responsabilidad. Nuestra meta es ser un socio de confianza para nuestros clientes, ofreciendo soluciones de seguridad personalizadas que protejan lo que más valoran 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/imagen3.jpg' %}" class="img-fluid" alt="Image">
+                <div class="carousel-caption">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Su Confianza, Nuestra Prioridad</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4">Dedicación y Profesionalismo</h1>
+                        <p class="mb-5 fs-5">En Servigcontrol S.A.S., nuestra historia es una prueba de dedicación, crecimiento y compromiso con la excelencia. Desde nuestros humildes comienzos, hemos trabajado incansablemente para establecer estándares de seguridad excepcionales. Creemos en la importancia de la innovación constante y en la formación continua de nuestro equipo para adaptarnos a las demandas cambiantes del mercado. Nuestro propósito es ofrecer un servicio de vigilancia que no solo cumpla, sino que supere las expectativas de nuestros clientes, garantizando siempre su tranquilidad y protección.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon btn bg-primary" aria-hidden="false"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon btn bg-primary" aria-hidden="false"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- Carousel End -->
+
+{% endblock %}

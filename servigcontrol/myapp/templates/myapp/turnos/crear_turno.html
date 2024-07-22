@@ -1,0 +1,33 @@
+{% extends 'layouts/layout_2.html' %}
+
+{% block content %}
+
+<form class="container-fluid" method="POST">
+    {% csrf_token %}
+    {{error}}
+    <div class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                <div class="bg-dark rounded p-4 p-sm-5 my-4 mx-3">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <a href="index.html" class="">
+                            <h3 class="text-primary text-center"><i class="fa fa-user-edit me-2"></i>Asignar Turno</h3>
+                        </a>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" required id="floatingInput" name="title">
+                        <label for="floatingInput">Turno</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" required id="floatingPassword" name="descripcion">
+                        <label for="floatingPassword">Descripción</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary py-3 w-100 mb-4">Guardar</button>
+                    <p class="text-center mb-0">Volver: <a href="/principal">Principal</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
